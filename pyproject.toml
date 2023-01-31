@@ -1,0 +1,24 @@
+[tool.poetry]
+name = "nrfeather-enviro+"
+version = "0.1.0"
+description = ""
+authors = ["Mariusz Jurgielewicz <mordor@mail.com>"]
+readme = "README.md"
+packages = [{ include = "nrfeather-enviro+" }]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+circuitpython-stubs = "^7.3.3"
+adafruit-circuitpython-ble = "^9.0.1"
+adafruit-circuitpython-bme280 = "^2.6.19"
+adafruit-circuitpython-st7735r = "^1.5.9"
+adafruit-circuitpython-display-text = "^2.23.0"
+adafruit-circuitpython-pm25 = "^2.1.13"
+adafruit-circuitpython-ble-adafruit = "^1.4.6"
+pimoroni-circuitpython-ltr559 = { git = "https://github.com/pimoroni/Pimoroni_CircuitPython_LTR559.git" }
+pimoroni-circuitpython-MICS6814 = { git = "https://github.com/pimoroni/Pimoroni_CircuitPython_MICS6814.git" }
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
